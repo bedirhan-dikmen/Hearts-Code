@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebrar❤️</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h1>Ebrar ve Onun Bedosu ❤️</h1>
+    <p class="description">Bedo Beyin sevdiceği Ebrar Hanımı sevgisinin seviyesini küçük bir test ile belirlediği tatlış sorular.</p>
+    
+    <div class="progress-container">
+        <div class="progress-bar" id="progress"></div>
+    </div>
+
+    <div id="quiz">
+        <div class="question active" id="q1">
+            <p>1. Benim en sevdiğim renk hangisi?</p>
+            <button onclick="nextQuestion(1, 3)">Mavi</button>
+            <button onclick="nextQuestion(1, 5)">Yeşil</button>
+            <button onclick="nextQuestion(1, 4)">Kahverengi</button>
+            <button onclick="nextQuestion(1, 1)">Mor</button>
+        </div>
+        
+        <div class="question" id="q2">
+            <p>2. Bir tercih hakkım olsa hangisini seçerdim</p>
+            <button onclick="nextQuestion(2, 3)">Seninle her ay bir hafta görüşebilmek </button>
+            <button onclick="nextQuestion(2, 1)">Seninle bir sene görüşmemek koşuluyla yıl sonunda evlenmek</button>
+            <button onclick="nextQuestion(2, 2)">6 ay boyunca seninle hiç haberleşmemek şartı sonunda aynı şehirde yaşamak</button>
+            <button onclick="nextQuestion(2, 4)">Benim değil senin gelip gittiğin bir evrende keyif yaşamak</button>
+            <button onclick="nextQuestion(2, 5)">Aramızdaki mesafenin max 4 saatlik olduğu uzaklıkta yaşamak (giresun-rize)</button>
+        </div>
+        
+        <div class="question" id="q3">
+            <p>3. Beni başka biriyle kıyasladığında ne düşünüyorsun?</p>
+            <button onclick="nextQuestion(3, 1)">Ortalamanın bir tık üstü iyi olmam</button>
+            <button onclick="nextQuestion(3, 3)">Seviyenin düşüklüğü nedeniyle benim zirvede olmam</button>
+            <button onclick="nextQuestion(3, 5)">Muheşem, efsane, eşi benzeri olmayan (sen gibi) biri</button>
+            <button onclick="nextQuestion(3, 5)">Bi Çağlar Ertuğrul değilsin ama giderin var yinede</button>
+        </div>
+        <div class="question" id="q4">
+            <p>4. Benim en sevdiğim yemek nedir?</p>
+            <button onclick="nextQuestion(4, 5)">Sulu Köfte Yemeği</button>
+            <button onclick="nextQuestion(4, 3)">Dolma</button>
+            <button onclick="nextQuestion(4, 4)">İskender</button>
+            <button onclick="nextQuestion(4, 1)">Pilav üstü kuru</button>
+            <button onclick="nextQuestion(4, 2)">Kumpir</button>
+        </div>
+        <div class="question" id="q5">
+            <p>5. Bana göre en çok ne yaparken birlikte eğleniyoruz?</p>
+            <button onclick="nextQuestion(5, 1)">Oyun Oynarken</button>
+            <button onclick="nextQuestion(5, 1)">Film/Dizi İzlemek</button>
+            <button onclick="nextQuestion(5, 4)">Seninle Uğraşırken (ortak bir şekilde)</button>
+            <button onclick="nextQuestion(5, 3)">Boş/Dedikodu yaparak </button>
+            <button onclick="nextQuestion(5, 5)">Beraberken her şeyde çok eğleniyoruz yav</button>
+        </div>
+
+        <div class="question" id="q6">
+            <p>6. Sence ben en çok hangisinden daha çok keyif alıyorum</p>
+            <button onclick="nextQuestion(6, 1)">Seninle tatlı tatlı oyun oynarken</button>
+            <button onclick="nextQuestion(6, 3)">Seninle kendime göre tatlı tatlı oyun oynarken</button>
+            <button onclick="nextQuestion(6, 3)">Sabrını zorlarken</button>
+            <button onclick="nextQuestion(6, 1)">Sen benim sabrımı zorlarken</button>
+            <button onclick="nextQuestion(6, 5)">Hem tatlı yiyip hem seni yerken</button>
+        </div>
+        <div class="question" id="q7">
+            <p>7. En çok sevdiğim anımız hangisi?</p>
+            <button onclick="nextQuestion(7, 3)">Rafting & Aşıklar şelalesinde yürüyüş</button>
+            <button onclick="nextQuestion(7, 5)">Muğla macerası</button>
+            <button onclick="nextQuestion(7, 2)">Rizedeki grupla sahil günü</button>
+            <button onclick="nextQuestion(7, 1)">İlk buluştuğumuz gün?</button>
+            <button onclick="nextQuestion(7, 1)">Pek güzel anımız yok</button>
+        </div>
+        <div class="question" id="q8">
+            <p>8. Peki en az sevdiğim anımız hangisi?</p>
+            <button onclick="nextQuestion(8, 1)">Rafting & Aşıklar şelalesinde yürüyüş</button>
+            <button onclick="nextQuestion(8, 1)">Muğla macerası</button>
+            <button onclick="nextQuestion(8, 1)">Rizedeki grupla sahil günü</button>
+            <button onclick="nextQuestion(8, 1)">İlk buluştuğumuz gün?</button>
+            <button onclick="nextQuestion(8, 1)">Tatlı yediğimiz herhangi bir gün</button>
+            <button onclick="nextQuestion(8, 5)">Hepsinde ayrı keyif ayrı zevk aldık be!</button>
+        </div>
+        <div class="question" id="q9">
+            <p>9. İlişkimizin geleceği hakkında ne düşünüyorum?</p>
+            <button onclick="nextQuestion(9, 1)">güzel ve tatlı ileryleyişin bozulmadan devam edeceği</button>
+            <button onclick="nextQuestion(9, 1)">Buraya kadar iyi geldik burdan sonrası nasip?</button>
+            <button onclick="nextQuestion(9, 5)">Evli barklı 2 çocuk sahibi</button>
+            <button onclick="nextQuestion(9, 1)">Bilmiyorum belli olmaz!</button>
+
+            
+        </div>
+        <div class="question" id="q10">
+            <p>10. Beni en çok ne zaman sinirlendiriyorsun?</p>
+            <button onclick="nextQuestion(10, 1)">Bana trip attığında</button>
+            <button onclick="nextQuestion(10, 3)">Şakamı anlamadığında</button>
+            <button onclick="nextQuestion(10, 5)">Şakamı hem anlamayıp hem de zorbaladığında</button>
+            <button onclick="nextQuestion(10, 3)">İnsan sevdiğini sinirlendirir mi cnm</button>
+        </div>
+
+        
+    </div>
+    
+    <div id="result">
+        <h2>Test Sonucu</h2>
+        <p>Uyum Puanınız:</p>
+        <div id="score">100</div>%
+        <p class="result-message" id="message"></p>
+        <button id="loveTestBtn" onclick="goToLoveTest()">💌 Yeni Aşk Testine Git</button>
+    </div>
+    
+
+    <script src="styles/script.js"></script>
+</body>
+</html>
