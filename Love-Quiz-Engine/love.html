@@ -2,119 +2,18 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Hangisi Daha Güzel?</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background: linear-gradient(to right, #d0f4de, #c9d6ff);
-      margin: 0;
-      padding: 40px;
-    }
-    h1 {
-      color: #5f27cd;
-      margin-bottom: 30px;
-    }
-    .question {
-      font-size: 1.2rem;
-      margin-bottom: 20px;
-    }
-    .photo-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .photo {
-      width: 200px;
-      height: 200px;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: transform 0.5s ease;
-      position: relative;
-    }
-    .photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      cursor: pointer;
-    }
-    #question1, #question2, #question3, #final {
-      display: none;
-    }
-    #question1.active, #question2.active, #question3.active, #final.active {
-      display: block;
-    }
-    .final-text {
-      font-size: 1.4rem;
-      margin-top: 30px;
-      color: #4a148c;
-    }
-    .slideshow-container {
-      position: relative;
-      max-width: 1000px;
-      margin: 30px auto;
-      height: 500px; /* Sabit yükseklik ekleyin */
-    }
-    
-    .slide {
-      opacity: 0;
-      transition: opacity 1s ease-in-out;
-      position: absolute; /* Tüm slaytlar aynı yerde */
-      width: 100%;
-      top: 0;
-      left: 0;
-    }
-    
-    .slide.active {
-      opacity: 1;
-      z-index: 1;
-    }
-    
-    .slide img {
-      width: 40%;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      display: block;
-      margin: 0 auto;
-    }
-    .slide-caption {
-      color: #4a148c;
-      font-size: 1.2rem;
-      margin-top: 10px;
-    }
-    audio {
-      display: none;
-    }
-    #musicBtn {
-      background: linear-gradient(to right, #a18cd1, #fbc2eb);
-      border: none;
-      color: white;
-      padding: 12px 24px;
-      font-size: 1rem;
-      font-weight: bold;
-      border-radius: 30px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-      cursor: pointer;
-      transition: all 0.3s ease;
-      margin-top: 30px;
-    }
-    #musicBtn:hover {
-      transform: scale(1.05);
-      background: linear-gradient(to right, #fbc2eb, #a18cd1);
-    }
-  </style>
+  <title>Ebrar❤️</title>
+  <link rel="stylesheet" href="assets/css/love.css">
 </head>
 <body>
   <div id="question1" class="active">
     <h1>🎀 Aşk Testi: Hangisi Daha Güzel?</h1>
     <p class="question">Sence aşağıdaki yapay zekanın oluşturduğu fotoğraflardan hangisi en güzeli?</p>
     <div class="photo-grid">
-      <div class="photo"><img src="image/Game/My ChatGPT image (1).png" onclick="wrongChoice(this)"></div>
-      <div class="photo"><img src="image/Game/My ChatGPT image (2).png" onclick="wrongChoice(this)"></div>
-      <div class="photo"><img src="image/Game/My ChatGPT image.png" onclick="nextQuestion(1)"></div>
-      <div class="photo"><img src="image/Game/My ChatGPT image (3).png" onclick="wrongChoice(this)"></div>
+      <div class="photo"><img src="assets/media/image/firstTest/test11.png" onclick="wrongChoice(this)"></div>
+      <div class="photo"><img src="assets/media/image/firstTest/test12.png" onclick="wrongChoice(this)"></div>
+      <div class="photo"><img src="assets/media/image/firstTest/test13.png" onclick="nextQuestion(1)"></div>
+      <div class="photo"><img src="assets/media/image/firstTest/test14.png" onclick="wrongChoice(this)"></div>
     </div>
   </div>
 
@@ -122,10 +21,10 @@
     <h1>💖 Aşk Testi: Seni En Çok Ne Mutlu Eder?</h1>
     <p class="question">Aşağıdakilerden hangisi seni en mutlu eder?</p>
     <div class="photo-grid">
-      <div class="photo"><img src="image/download.jpg" onclick="wrongChoice(this)"></div>
-      <div class="photo"><img src="image/adsiz.png" onclick="wrongChoice(this)"></div>
-      <div class="photo"><img src="image/bedo.jpg" onclick="nextQuestion(2)"></div>
-      <div class="photo"><img src="image\tatil.PNG" onclick="wrongChoice(this)"></div>
+      <div class="photo"><img src="assets/media/image/secondTest/test21.jpg" onclick="wrongChoice(this)"></div>
+      <div class="photo"><img src="assets/media/image/secondTest/test22.png" onclick="wrongChoice(this)"></div>
+      <div class="photo"><img src="assets/media/image/secondTest/test23.jpg" onclick="nextQuestion(2)"></div>
+      <div class="photo"><img src="assets/media/image/secondTest/test24.PNG" onclick="wrongChoice(this)"></div>
     </div>
   </div>
 
@@ -133,10 +32,10 @@
     <h1>🌟 Aşk Testi: En Güzel Anı Hangisiydi?</h1>
     <p class="question">En güzel çıktığın fotoğraf?</p>
     <div class="photo-grid">
-      <div class="photo"><img src="image/ebros1.jpg" onclick="wrongChoice(this)"></div>
-      <div class="photo"><img src="image/ebros2.jpg" onclick="wrongChoice(this)"></div>
-      <div class="photo"><img src="image/ebros3.jpg" onclick="wrongChoice(this)"></div>
-      <div class="photo"><img src="image/ebros.jpg" onclick="nextQuestion(3)"></div>
+      <div class="photo"><img src="assets/media/image/thirdTest/test31.jpg" onclick="wrongChoice(this)"></div>
+      <div class="photo"><img src="assets/media/image/thirdTest/test32.jpg" onclick="wrongChoice(this)"></div>
+      <div class="photo"><img src="assets/media/image/thirdTest/test33.jpg" onclick="wrongChoice(this)"></div>
+      <div class="photo"><img src="assets/media/image/thirdTest/test34.jpg" onclick="nextQuestion(3)"></div>
     </div>
   </div>
 
@@ -145,96 +44,34 @@
     <button id="musicBtn" onclick="toggleMusic()">🎶 Müziği Başlat</button>
     
     <audio id="bgm" loop>
-      <source src="styles/Sen misin İlacım.mp3" type="audio/mpeg">
+      <source src="assets/media/audio/audio1.mp3" type="audio/mpeg">
       Tarayıcınız ses dosyasını desteklemiyor.
     </audio>
     <p class="final-text">365 gündür 'en sevdiğim gün' diye bir şey yok, çünkü seninle her gün bir öncekinden daha özel. 1. yılımız kutlu olsun SEVGİLİM 💖</p>
 
     <div class="slideshow-container">
-      <div class="slide"><img src="image/sahil/IMG-20240608-WA0052.jpg"><div class="slide-caption"></div></div>
-      <div class="slide"><img src="image/sahil/IMG-20240608-WA0054.jpg"><div class="slide-caption"></div></div>
-      <div class="slide"><img src="image/sahil/IMG-20240608-WA0056.jpg"><div class="slide-caption"></div></div>
-      <div class="slide"><img src="image/sahil/IMG-20240608-WA0058.jpg"><div class="slide-caption"></div></div>
-      <div class="slide"><img src="image/sahil/IMG-20240608-WA0060.jpg"><div class="slide-caption"></div></div>
-      <div class="slide"><img src="image/sahil/IMG-20240608-WA0062.jpg"><div class="slide-caption"></div></div>
-      <div class="slide"><img src="image/sahil/IMG-20240608-WA0064.jpg"><div class="slide-caption"></div></div>
-      <div class="slide"><img src="image/sahil/IMG-20240608-WA0066.jpg"><div class="slide-caption"></div></div>
-      <div class="slide"><img src="image/sahil/IMG-20240608-WA0068.jpg"><div class="slide-caption"></div></div>
-      <div class="slide"><img src="image/sahil/IMG-20240608-WA0070.jpg"><div class="slide-caption"></div></div>
-      <div class="slide"><img src="image/sahil/IMG-20240608-WA0072.jpg"><div class="slide-caption"></div></div>
-      <div class="slide"><img src="image/sahil/IMG-20240608-WA0074.jpg"><div class="slide-caption"></div></div>
-      <div class="slide"><img src="image/sahil/IMG-20240608-WA0076.jpg"><div class="slide-caption"></div></div>
-      <div class="slide"><img src="image/sahil/IMG-20240608-WA0078.jpg"><div class="slide-caption"></div></div>
-      <div class="slide"><img src="image/sahil/IMG-20240608-WA0080.jpg"><div class="slide-caption"></div></div>
-      <div class="slide"><img src="image/sahil/IMG-20240608-WA0082.jpg"><div class="slide-caption"></div></div>
-      <div class="slide"><img src="image/sahil/IMG-20240608-WA0084.jpg"><div class="slide-caption"></div></div>
-      <div class="slide"><img src="image/sahil/IMG-20240608-WA0086.jpg"><div class="slide-caption"></div></div>
-      <div class="slide"><img src="image/sahil/IMG-20240608-WA0088.jpg"><div class="slide-caption"></div></div>
+      <div class="slide"><img src="assets/media/image/slide/slide1.jpg"><div class="slide-caption"></div></div>
+      <div class="slide"><img src="assets/media/image/slide/slide2.jpg"><div class="slide-caption"></div></div>
+      <div class="slide"><img src="assets/media/image/slide/slide3.jpg"><div class="slide-caption"></div></div>
+      <div class="slide"><img src="assets/media/image/slide/slide4.jpg"><div class="slide-caption"></div></div>
+      <div class="slide"><img src="assets/media/image/slide/slide5.jpg"><div class="slide-caption"></div></div>
+      <div class="slide"><img src="assets/media/image/slide/slide6.jpg"><div class="slide-caption"></div></div>
+      <div class="slide"><img src="assets/media/image/slide/slide7.jpg"><div class="slide-caption"></div></div>
+      <div class="slide"><img src="assets/media/image/slide/slide8.jpg"><div class="slide-caption"></div></div>
+      <div class="slide"><img src="assets/media/image/slide/slide9.jpg"><div class="slide-caption"></div></div>
+      <div class="slide"><img src="assets/media/image/slide/slide10.jpg"><div class="slide-caption"></div></div>
+      <div class="slide"><img src="assets/media/image/slide/slide11.jpg"><div class="slide-caption"></div></div>
+      <div class="slide"><img src="assets/media/image/slide/slide12.jpg"><div class="slide-caption"></div></div>
+      <div class="slide"><img src="assets/media/image/slide/slide13.jpg"><div class="slide-caption"></div></div>
+      <div class="slide"><img src="assets/media/image/slide/slide14.jpg"><div class="slide-caption"></div></div>
+      <div class="slide"><img src="assets/media/image/slide/slide15.jpg"><div class="slide-caption"></div></div>
+      <div class="slide"><img src="assets/media/image/slide/slide16.jpg"><div class="slide-caption"></div></div>
+      <div class="slide"><img src="assets/media/image/slide/slide17.jpg"><div class="slide-caption"></div></div>
+      <div class="slide"><img src="assets/media/image/slide/slide18.jpg"><div class="slide-caption"></div></div>
+      <div class="slide"><img src="assets/media/image/slide/slide19.jpg"><div class="slide-caption"></div></div>
     </div>
   </div>
 
-  <script>
-    function wrongChoice(el) {
-      const x = Math.random() * (window.innerWidth - 200);
-      const y = Math.random() * (window.innerHeight - 200);
-      const rotation = (Math.random() * 90) - 45;
-      el.parentElement.style.position = "absolute";
-      el.parentElement.style.left = `${x}px`;
-      el.parentElement.style.top = `${y}px`;
-      el.parentElement.style.transform = `rotate(${rotation}deg)`;
-    }
-
-    function nextQuestion(current) {
-      document.getElementById(`question${current}`).classList.remove("active");
-      const next = current + 1;
-      if (document.getElementById(`question${next}`)) {
-        document.getElementById(`question${next}`).classList.add("active");
-      } else {
-        document.getElementById("final").classList.add("active");
-        showSlides();
-      }
-    }
-
-    let slideIndex = 0;
-    function showSlides() {
-      const slides = document.querySelectorAll(".slide");
-      
-      // Tüm slaytları gizle
-      slides.forEach(slide => {
-        slide.style.opacity = 0;
-        slide.classList.remove("active");
-      });
-      
-      // Sıradaki slaytı göster
-      slideIndex++;
-      if (slideIndex > slides.length) slideIndex = 1;
-      
-      const currentSlide = slides[slideIndex - 1];
-      currentSlide.style.opacity = 1;
-      currentSlide.classList.add("active");
-      
-      // Otomatik geçiş
-      setTimeout(showSlides, 5000);
-    }
-
-    // Sayfa yüklendiğinde slaytları başlat
-    window.onload = function() {
-      // Diğer kodlar...
-      showSlides();
-    };
-
-    const music = document.getElementById('bgm');
-    const musicBtn = document.getElementById('musicBtn');
-
-    function toggleMusic() {
-        if (music.paused) {
-            music.play();
-            musicBtn.innerText = "⏸️ Müziği Durdur";
-        } else {
-            music.pause();
-            musicBtn.innerText = "🎶 Müziği Başlat";
-        }
-    }
-  </script>
+  <script src="assets/js/love.js"></script>
 </body>
 </html>

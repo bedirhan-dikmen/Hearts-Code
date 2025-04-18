@@ -1,0 +1,130 @@
+/* Sayfa genel font, hizalama ve arkaplan ayarları */
+body {
+    font-family: Arial, sans-serif; /* Tüm sayfa için yazı tipi */
+    text-align: center; /* İçeriği yatay olarak ortala */
+    background: linear-gradient(to right, #d0f4de, #c9d6ff); /* Sağdan sola doğru renk geçişli arka plan */
+    margin: 0; /* Sayfa dış boşluklarını sıfırla */
+    padding: 40px; /* Sayfa içeriğinden kenarlara 40px boşluk bırak */
+}
+
+/* Başlık stilleri */
+h1 {
+    color: #5f27cd; /* Mor bir başlık rengi */
+    margin-bottom: 30px; /* Başlığın altına boşluk bırak */
+}
+
+/* Soru metni stil ayarları */
+.question {
+    font-size: 1.2rem; /* Soru metni boyutu */
+    margin-bottom: 20px; /* Altına boşluk bırak */
+}
+
+/* Fotoğraf grid yapısı: tüm fotoğraflar yan yana ve düzgün aralıklarla */
+.photo-grid {
+    display: flex; /* Öğeleri yatayda hizala */
+    flex-wrap: wrap; /* Taşan öğeleri alt satıra geçir */
+    justify-content: center; /* Ortala */
+    gap: 20px; /* Öğeler arası boşluk */
+}
+
+/* Fotoğraf kutularının genel boyutu ve görünüm ayarları */
+.photo {
+    width: 200px; /* Genişlik */
+    height: 200px; /* Yükseklik */
+    border-radius: 15px; /* Köşeleri yuvarlat */
+    overflow: hidden; /* Taşan içeriği gizle */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Hafif gölge efekti */
+    transition: transform 0.5s ease; /* Hover gibi durumlarda animasyon geçişi */
+    position: relative; /* İçerideki öğeler için referans konumlandırma */
+}
+
+/* Fotoğrafın kendisine ait stil: tamamını kaplayacak şekilde */
+.photo img {
+    width: 100%; /* Kapsayıcıyı tamamen kapla */
+    height: 100%; /* Dikeyde kapsayıcıyı kapla */
+    object-fit: cover; /* Fotoğrafı taşmadan kırparak sığdır */
+    cursor: pointer; /* Fare ile üzerine gelindiğinde tıklanabilir işareti göster */
+}
+
+/* Tüm sorular ve final bölümü ilk başta görünmez */
+#question1, #question2, #question3, #final {
+    display: none; /* Görünmez yap */
+}
+
+/* Aktif olan bölümler görünür olacak */
+#question1.active, #question2.active, #question3.active, #final.active {
+    display: block; /* Görünür hale getir */
+}
+
+/* Final metni stil ayarları */
+.final-text {
+    font-size: 1.4rem; /* Yazı boyutu */
+    margin-top: 30px; /* Üst boşluk */
+    color: #4a148c; /* Koyu mor renk */
+}
+
+/* Slayt kapsayıcısı: boyut sabitlemesi ve ortalanma */
+.slideshow-container {
+    position: relative; /* İçerideki slaytlar için referans konum */
+    max-width: 1000px; /* Maksimum genişlik */
+    margin: 30px auto; /* Ortala ve üst-alt boşluk bırak */
+    height: 500px; /* Sabit yükseklik verildi */
+}
+
+/* Tek tek slaytlar: başlangıçta görünmez */
+.slide {
+    opacity: 0; /* Görünmez yap */
+    transition: opacity 1s ease-in-out; /* Geçişli gösterme efekti */
+    position: absolute; /* Üst üste binmeleri için */
+    width: 100%; /* Tam genişlikte olsun */
+    top: 0;
+    left: 0;
+}
+
+/* Aktif slayt görünür hale geliyor */
+.slide.active {
+    opacity: 1; /* Görünür yap */
+    z-index: 1; /* Diğerlerinin üstünde görünmesini sağla */
+}
+
+/* Slayt fotoğrafı: ortalanmış ve şekil verilmiş */
+.slide img {
+    width: 40%; /* Orta büyüklükte bir genişlik */
+    border-radius: 15px; /* Köşe yuvarlatma */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Hafif gölge */
+    display: block; /* Ortalamak için block yap */
+    margin: 0 auto; /* Yatayda ortala */
+}
+
+/* Slayt alt yazısı */
+.slide-caption {
+    color: #4a148c; /* Renk */
+    font-size: 1.2rem; /* Boyut */
+    margin-top: 10px; /* Üst boşluk */
+}
+
+/* Ses elementi gizli olacak (sadece JavaScript ile kontrol edilecek) */
+audio {
+    display: none;
+}
+
+/* Müzik butonunun görünümü */
+#musicBtn {
+    background: linear-gradient(to right, #a18cd1, #fbc2eb); /* Renk geçişli arka plan */
+    border: none; /* Kenarlık yok */
+    color: white; /* Yazı rengi */
+    padding: 12px 24px; /* İç boşluklar */
+    font-size: 1rem; /* Yazı boyutu */
+    font-weight: bold; /* Kalın yazı */
+    border-radius: 30px; /* Tam yuvarlak köşe */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Hafif gölge efekti */
+    cursor: pointer; /* Tıklanabilir imleç */
+    transition: all 0.3s ease; /* Hover geçiş efekti */
+    margin-top: 30px; /* Üst boşluk */
+}
+
+/* Butona fareyle gelince büyütme ve renk geçiş efekti */
+#musicBtn:hover {
+    transform: scale(1.05); /* %5 büyütme */
+    background: linear-gradient(to right, #fbc2eb, #a18cd1); /* Renkleri ters çevir */
+}

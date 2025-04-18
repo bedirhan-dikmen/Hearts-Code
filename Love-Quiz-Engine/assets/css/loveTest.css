@@ -1,0 +1,183 @@
+/* TEMEL STİL */
+body {
+  font-family: 'Arial', sans-serif; /* Sayfa genelinde Arial yazı tipi kullan */
+  background: linear-gradient(135deg, #c3ecf7 0%, #e4eafc 100%); /* Açık mavi tonlarda degrade arka plan */
+  margin: 0; /* Sayfanın dış boşluklarını sıfırla */
+  padding: 20px; /* Sayfanın iç boşluklarını ayarla */
+  min-height: 100vh; /* Sayfa yüksekliğini en az ekran kadar yap */
+  display: flex; /* Flexbox düzeni kullan */
+  flex-direction: column; /* Öğeleri dikey sırala */
+  align-items: center; /* Öğeleri ortala */
+  color: #2c3e50; /* Metin rengini koyu mavi yap */
+}
+
+/* "Teste Başla" butonu stili */
+#loveTestBtn {
+  background: linear-gradient(to right, #ff9a9e, #fad0c4); /* Pembe tonlarda geçişli arka plan */
+  border: none; /* Kenarlık kaldırıldı */
+  color: white; /* Yazı rengi beyaz */
+  padding: 12px 24px; /* İç boşluk */
+  font-size: 1rem; /* Yazı boyutu */
+  font-weight: bold; /* Kalın yazı */
+  border-radius: 30px; /* Yuvarlatılmış köşeler */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Gölgelendirme */
+  cursor: pointer; /* Üzerine gelince el işareti */
+  transition: all 0.3s ease; /* Yumuşak geçiş efekti */
+  margin-top: 20px; /* Üst boşluk */
+}
+
+/* Buton üzerine gelindiğinde animasyon */
+#loveTestBtn:hover {
+  transform: scale(1.05); /* Hafif büyüme efekti */
+  background: linear-gradient(to right, #fad0c4, #ff9a9e); /* Renk geçişini ters çevir */
+}
+
+/* BAŞLIK */
+h1 {
+  color: #3c6382; /* Başlık rengi */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1); /* Gölge efekti */
+  font-size: 2.5rem; /* Büyük yazı */
+  margin-bottom: 10px; /* Alt boşluk */
+}
+
+/* AÇIKLAMA METNİ */
+.description {
+  font-style: italic; /* Eğik yazı */
+  margin-bottom: 30px; /* Alt boşluk */
+  text-align: center; /* Ortalanmış metin */
+  max-width: 600px; /* Maksimum genişlik */
+}
+
+/* TEST ALANI STİLİ */
+#quiz {
+  background-color: rgba(255, 255, 255, 0.9); /* Hafif şeffaf beyaz arka plan */
+  border-radius: 15px; /* Köşeler yuvarlatıldı */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Yumuşak gölge */
+  padding: 30px; /* İç boşluk */
+  width: 90%; /* Genişliğin %90'ı */
+  max-width: 600px; /* Maksimum 600px genişlik */
+}
+
+/* SORU KUTULARI */
+.question {
+  margin-bottom: 25px; /* Alt boşluk */
+  padding: 20px; /* İç boşluk */
+  background: linear-gradient(to right, #e0f7fa, #e8f5e9); /* Açık mavi-yeşil geçişli arka plan */
+  border-radius: 10px; /* Köşeler yuvarlatıldı */
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05); /* Hafif gölge */
+  display: none; /* Başta gizli */
+}
+
+/* Aktif soru görünür hale gelir */
+.question.active {
+  display: block; /* Görünür yap */
+  animation: fadeIn 0.5s ease; /* Geçiş efekti */
+}
+
+/* SORU METNİ STİLİ */
+.question p {
+  font-weight: bold; /* Kalın yazı */
+  font-size: 1.1rem; /* Boyut */
+  margin-bottom: 15px; /* Alt boşluk */
+  color: #2e86c1; /* Mavi yazı rengi */
+}
+
+/* GENEL BUTON STİLİ */
+button {
+  background: linear-gradient(to right, #a29bfe, #81ecec); /* Mor-mavi geçişli arka plan */
+  color: white; /* Beyaz yazı */
+  border: none; /* Kenarlık yok */
+  padding: 12px 25px; /* İç boşluk */
+  margin: 8px; /* Dış boşluk */
+  border-radius: 25px; /* Yuvarlatılmış köşeler */
+  cursor: pointer; /* El işareti */
+  font-size: 1rem; /* Yazı boyutu */
+  transition: all 0.3s ease; /* Animasyonlu geçiş */
+  box-shadow: 0 3px 8px rgba(136, 192, 255, 0.3); /* Hafif gölge */
+}
+
+/* Buton üzerine gelindiğinde animasyon */
+button:hover {
+  transform: translateY(-3px); /* Hafif yukarı hareket */
+  box-shadow: 0 5px 15px rgba(136, 192, 255, 0.4); /* Daha belirgin gölge */
+}
+
+/* Quiz içindeki butonlar tam genişlikte */
+#quiz .question button {
+  width: 100%; /* Tüm genişliği kapla */
+  margin: 5px 0 !important; /* Üst-alt boşluk ayarı */
+  box-sizing: border-box; /* Padding'i genişliğe dahil et */
+}
+
+/* SONUÇ ALANI STİLİ */
+#result {
+  background-color: rgba(255, 255, 255, 0.95); /* Beyaz arka plan, hafif şeffaf */
+  border-radius: 15px; /* Yuvarlatılmış köşeler */
+  padding: 30px; /* İç boşluk */
+  margin-top: 30px; /* Üst boşluk */
+  text-align: center; /* Ortalanmış içerik */
+  display: none; /* Başta gizli */
+  animation: bounceIn 0.7s ease; /* Giriş animasyonu */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Gölgelendirme */
+}
+
+/* Sonuç başlığı */
+#result h2 {
+  color: #6c5ce7; /* Mor renk */
+  font-size: 2rem; /* Büyük boyut */
+  margin-bottom: 10px; /* Alt boşluk */
+}
+
+/* Puan yazısı */
+#score {
+  font-size: 3rem; /* Büyük puan */
+  font-weight: bold; /* Kalın */
+  color: #00cec9; /* Turkuaz renk */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1); /* Hafif gölge */
+}
+
+/* Sonuç mesajı */
+.result-message {
+  font-size: 1.2rem; /* Boyut */
+  line-height: 1.6; /* Satır aralığı */
+  margin-top: 20px; /* Üst boşluk */
+}
+
+/* İLERLEME ÇUBUĞU KONTEYNERİ */
+.progress-container {
+  width: 100%; /* Tam genişlik */
+  background-color: #3c6382; /* Lacivert zemin */
+  border-radius: 10px; /* Köşeler yuvarlatıldı */
+  margin: 20px 0; /* Üst-alt boşluk */
+  height: 10px; /* Yükseklik */
+  overflow: hidden; /* Taşan içerikleri gizle */
+}
+
+/* İLERLEME ÇUBUĞU */
+.progress-bar {
+  height: 100%; /* Tam yükseklik */
+  background: linear-gradient(to right, #74b9ff, #a29bfe); /* Mavi-mor geçişli renk */
+  width: 0%; /* Başlangıçta boş */
+  transition: width 0.5s ease; /* Yumuşak genişleme */
+}
+
+/* ANİMASYONLAR */
+/* Görünme efekti */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Sonuç kutusu için sıçrama efekti */
+@keyframes bounceIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* MOBİL UYUMLULUK */
+@media (max-width: 600px) {
+  h1 { font-size: 1.8rem; } /* Başlık boyutunu küçült */
+  #quiz { padding: 20px 15px; } /* İç boşluğu azalt */
+  button { width: 100%; margin: 8px 0; } /* Butonları tam genişlik yap, boşluk ver */
+}
